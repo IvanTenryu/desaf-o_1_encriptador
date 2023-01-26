@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap');
+
+html {
+  font-family: 'Roboto Slab', serif;
+  background: #c8c8c8;
+}
+
+header {
+  font-size: xx-large;
+  font-weight: bold;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: left;
+  max-width: 100%;
+}
+
+.instrucciones {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 5rem;
+  text-align: left;
+}
+
+.instrucciones h3 {
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.instrucciones p {
+  line-height: 1.5rem;
+  font-size: smaller;
+  font-style: italic;
+}
+.contenedor {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.contenedor-texto, .contenedor-resultado {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+textarea {
+  max-width: 100%;
+  resize: none;
+}
+
+.botones {
+  width: 180px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contenedor .fa {
+  width: 35px;
+  padding-right: .1rem;
+}
+
+footer  {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 0rem 2rem;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: larger;
+  padding: 1rem 0;
+}
+
+footer h4 {
+  font-size: medium;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+footer p {
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+.sobre-mi, .redes-sociales, .contacto {
+  width: 30%;
+  display: inline-block;
+  /* border: 1px solid red;*/
+  padding: 0rem 1rem;
+  vertical-align: top;
+}
+
+.resumen {
+  font-style: italic;
+  line-height: 1.1rem;
+}
+
+.redes {
+  width: 40%;
+  display: inline-block;
+  /* border: 1px solid red;*/
+  padding: 0rem 1rem;
+  vertical-align: middle;
+}
+
+footer .fa {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+footer .fa:hover {
+  cursor: pointer;
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg);}
+  20% { transform: translate(-3px, 0px) rotate(1deg);}
+  40% { transform: translate(1px, -1px) rotate(1deg);}
+  60% { transform: translate(-3px, 1px) rotate(0deg);}
+  80% { transform: translate(-1px, -1px) rotate(1deg);}
+  100% { transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript" src="script.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Encriptador de texto</title>
+
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo-pagina">Encriptador y desencriptador de texto</h1>
+    </header>
+
+    <main>
+    
+      <div class="instrucciones">
+        <h3 class="titulo-instrucciones">Instrucciones de uso</h3>
+        <p class="parrafo-instrucciones">En el área de texto de la derecha pega o escribe tu texto, presiona el botón encriptar para cambairlo, o presiona desencriptar para regresarlo a su forma normal. En el área de la izquierda podrás ver el resultado y copiarlo.</p>
+      </div>
+
+      <div class="contenedor">
+
+        <div class="contenedor-texto">
+          <textarea id="texto-original" cols="75" rows="15" placeholder="Tu texto aquí..." required onkeyup="this.value = this.value.toLowerCase(), valid(this)"></textarea>
+          <br> 
+          <button class="botones" id="encriptar"  onclick="textoEncriptado()"><i class="fa fa-lock" aria-hidden="true"></i>Encriptar</button>
+          <button class="botones" id="desencriptar" onclick="textoDesencriptado()"><i class="fa fa-unlock" aria-hidden="true"></i>Desencriptar</button>
+        </div>
+
+        <div class="contenedor-resultado">
+          <textarea id="texto-resultado" cols="75" rows="15" placeholder="Ve tu texto resultante aquí..."></textarea>
+          <br>
+          <button class="botones" id="copiar" onclick="copyText()"><i class="fa fa-clone" aria-hidden="true"></i>Copiar resultado</button>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <div class="pie-pagina">
+        <h3>Sobre el desarrollador</h3>
+
+        <div class="sobre-mi">
+          <h4>Acerca de mi</h4>
+          <p class="nombre">Ivan Israel Valencia Barreda</p>
+          <p class="resumen">Pasante de ingeniería en Sistemas Computacionales, con especialidad en Ciencia de Datos por el Tecnológico Nacional de México, campus Colima</p>
+        </div>
+
+        <div class="redes-sociales">
+          <h4>Redes sociales</h4>
+          <div class="redes">
+            <p>Linkedin</p>
+            <a href="https://www.linkedin.com/in/ivanisraelvalenciabarreda" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <div  class="redes">
+            <p>Github</p>
+            <a href="https://github.com/ivantenryu" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="contacto">
+          <h4>Contacto</h4>
+          <p>Correo electrónico</p>
+          <i class="fa fa-envelope" aria-hidden="true" onclick="mostrarCorreo()"></i>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
